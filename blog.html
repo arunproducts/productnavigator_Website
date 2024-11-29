@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet">
-
+    <!-- <link rel="icon" href="images/logo/xelorian_logo_horizontal-light_805X293_colored.jpg" type="image/x-icon"> -->
+    <link rel="icon" href="images/logo/xelorian_favicon_invert_96.png" type="image/x-icon">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     
@@ -25,7 +26,7 @@
   <body>
 	  <div class="bg-top navbar-light">
     	<div class="container">
-    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
+    		<!-- <div class="row no-gutters d-flex align-items-center align-items-stretch">
     			<div class="col-md-4 d-flex align-items-center py-4">
     				<a class="navbar-brand" href="index.html">Xelorian</a>
     			</div>
@@ -54,10 +55,15 @@
 					    </div>
 				    </div>
 			    </div>
-		    </div>
+		    </div> -->
 		  </div>
     </div>
 	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="col-md-4 d-flex align-items-center">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo/logo_horizontal.png" alt="Xelorian Logo" style="height: 40px; width: auto; display: inline-block; vertical-align: middle;">
+        </a>
+      </div>
 	    <div class="container d-flex align-items-center px-4">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
@@ -67,8 +73,12 @@
 	        <ul class="navbar-nav mr-auto">
 	        	<li class="nav-item"><a href="index.html" class="nav-link pl-0">Home</a></li>
 	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
+	        	<!-- <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li> -->
 	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item "><a href="productandinnovations.html" class="nav-link">Products & Innovation</a></li>
+
+            <li class="nav-item "><a href="accreditations.html" class="nav-link">Recognitions & Support</a></li>
+
 	        	<li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
@@ -89,160 +99,33 @@
       </div>
     </section>
 
-    <section class="ftco-section bg-light">
-			<div class="container">
-				<div class="row">
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_1.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Finance And Legal Working Streams Occur Throughout</a></h3>
-                <p>Thank you</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
+    <section class="blogs-section py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Latest Blogs</h2>
+        <div class="row" id="blog-list">
+          <!-- Blogs will be dynamically added here -->
+        </div>
+      </div>
+    
+      <!-- Blog Details Modal -->
+      <div class="modal fade" id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="blogModalLabel">Blog Title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_2.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Finance And Legal Working Streams Occur Throughout</a></h3>
-                <p>Thank you</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
+            <div class="modal-body">
+              <p id="blogContent">Blog content will appear here.</p>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_3.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Finance And Legal Working Streams Occur Throughout</a></h3>
-                <p>Thank you</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_4.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Finance And Legal Working Streams Occur Throughout</a></h3>
-                <p>Thank you</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_5.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Finance And Legal Working Streams Occur Throughout</a></h3>
-                <p>Thank you</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_6.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Finance And Legal Working Streams Occur Throughout</a></h3>
-                <p>Thank you</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col text-center">
-            <div class="block-27">
-              <ul>
-                <li><a href="#">&lt;</a></li>
-                <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&gt;</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-			</div>
-		</section>
+      </div>
+    </section>
+    
 		
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -350,6 +233,62 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const apiEndpoint = "http://srv581460.hstgr.cloud:5000/api/blogs/blogs"; // Replace with your API endpoint
+  const blogList = document.getElementById("blog-list");
+
+  // Fetch blogs from the API
+  fetch(apiEndpoint)
+    .then((response) => response.json())
+    .then((blogs) => {
+      blogList.innerHTML = blogs
+        .map(
+          (blog) => `
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="${blog.imageUrl}" class="card-img-top" alt="${blog.title}" />
+            <div class="card-body">
+              <h5 class="card-title">${blog.title}</h5>
+              <p class="card-text">${blog.description.substring(0, 100)}...</p>
+              <button class="btn btn-primary btn-read-more" data-id="${blog.id}">Read More</button>
+            </div>
+          </div>
+        </div>`
+        )
+        .join("");
+      attachReadMoreEvent();
+    })
+    .catch((error) => {
+      console.error("Error fetching blogs:", error);
+      blogList.innerHTML = "<p class='text-center text-danger'>Failed to load blogs.</p>";
+    });
+
+  // Attach "Read More" button click events
+  function attachReadMoreEvent() {
+    document.querySelectorAll(".btn-read-more").forEach((button) => {
+      button.addEventListener("click", () => {
+        const blogId = button.dataset.id;
+        fetch(`${apiEndpoint}/${blogId}`)
+          .then((response) => response.json())
+          .then((blog) => {
+            // Populate modal with blog details
+            document.getElementById("blogModalLabel").textContent = blog.title;
+            document.getElementById("blogContent").innerHTML = blog.content;
+            // Show modal
+            const blogModal = new bootstrap.Modal(document.getElementById("blogModal"));
+            blogModal.show();
+          })
+          .catch((error) => {
+            console.error("Error fetching blog details:", error);
+            alert("Failed to load blog details. Please try again.");
+          });
+      });
+    });
+  }
+});
+
+  </script>
     
   </body>
 </html>
